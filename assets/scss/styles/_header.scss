@@ -6,7 +6,7 @@
     color: white;
     padding: 14px 0;
     width: 100%;
-
+    z-index: 6;
     .logo-white {
         display: inline-block;
     }
@@ -15,14 +15,17 @@
         display: none;
     }
 }
-@keyframes openMenu{
-    0%{
+
+@keyframes openMenu {
+    0% {
         transform: translateY(-100%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
+
 #header[aria-live="assertive"] {
     animation: openMenu .6s ease-in-out forwards;
     position: fixed;
@@ -151,6 +154,7 @@
 #menu[aria-hidden="false"] {
     display: block;
     grid-column: 1/3;
+
     ul {
         display: grid;
         gap: 24px;
