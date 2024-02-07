@@ -58,13 +58,24 @@
                 </div>
             </div>
         </section>
-        <header class="header">
+        <header id="header" aria-live="off">
             <div class="container">
-                <nav>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </nav>
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <img src="/assets/icons/logo.svg" class="logo-white" alt="Logo - tehno park">
+                        <img src="/assets/icons/logo-dark.svg" class="logo-dark" alt="Logo - tehno park">
+                    </div>
+                    <button id="burger-btn" aria-expanded="false" aria-controls="menu"><span
+                            class="burger-icon"></span></button>
+                    <nav id="menu" aria-hidden="true">
+                        <ul>
+                            <li><a href="#">Go to product page</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="main">
