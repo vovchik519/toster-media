@@ -87,9 +87,11 @@
         gap: 10px;
         margin-top: 8px;
     }
-    .row:first-child{
+
+    .row:first-child {
         margin-top: 0;
     }
+
     .star {
         width: 106px;
         height: 20px;
@@ -132,8 +134,11 @@
         border-radius: 4px;
         background: rgb(213, 213, 213);
         padding: 4px 8px 4px 8px;
+        transition: .3s;
     }
-
+    li:hover{
+        background: rgb(231, 231, 231);
+    }
     img {
         object-fit: contain;
         min-width: 80%;
@@ -147,8 +152,25 @@
     font-size: 0.75rem;
     line-height: 1.125rem;
     text-align: center;
+    overflow: hidden;
+
+    p {
+        white-space: nowrap;
+        animation: scrollText 10s linear infinite
+    }
 }
-@media(min-width: 480px){
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media(min-width: 480px) {
     .firstscreen__banner {
         padding: 6px;
         font-size: 0.875rem;

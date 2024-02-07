@@ -7,6 +7,7 @@
     padding: 14px 0;
     width: 100%;
     z-index: 6;
+
     .logo-white {
         display: inline-block;
     }
@@ -166,6 +167,15 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
+    }
+
+    a {
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+    }
+
+    a:hover {
+        border-color: black;
     }
 
     a {

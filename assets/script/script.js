@@ -17,6 +17,11 @@ var swiper = new Swiper(".slider", {
     el: ".swiper-scrollbar",
     hide: true,
   },
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 });
 var shiping = new Swiper(".shipping-slider", {
   slidesPerView: 4.5,
