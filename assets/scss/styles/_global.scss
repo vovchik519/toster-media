@@ -81,22 +81,28 @@ h6 {
     font-weight: 700;
     font-size: inherit;
     font-weight: inherit;
+    width: 100%;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.container {
+    padding: 0 24px;
+    width: 100%;
 }
 
-.header {
-    flex: 0 1 auto;
+.delete {
+    position: relative;
 }
 
-.main {
-    flex: 1 1 auto;
-}
-
-.footer {
-    flex: 0 1 auto;
+.delete::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    display: block;
+    background: url(/assets/icons/delete.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 100%;
 }
